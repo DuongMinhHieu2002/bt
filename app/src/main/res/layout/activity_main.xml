@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNuoc"
+        android:hint="Nhap ten hang hoa">
+    </EditText>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtThuDo"
+        android:hint="Nhap so luong"
+        android:layout_below="@+id/edtNuoc">
+    </EditText>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtdongia"
+        android:hint="nhap don gia"
+        android:layout_below="@id/edtThuDo"
+        >
+
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnThem"
+        android:text="them"
+        android:layout_below="@+id/edtdongia">
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtdongia"
+        android:layout_toRightOf="@+id/btnThem"
+        android:id="@+id/btnsua"
+        android:text="sua">
+
+    </Button>
+    <ListView
+        android:id="@+id/lvNuoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsua">
+    </ListView>
+
+</RelativeLayout>

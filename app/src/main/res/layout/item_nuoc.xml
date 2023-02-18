@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ten hang"
+        android:id="@+id/tenhang">
+    </TextView>
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:id="@+id/imgAnh"
+        android:src="@drawable/vn"
+        android:layout_below="@+id/tenhang"
+        android:textSize="24sp">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/txtsoluong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng:"
+        android:layout_below="@id/tenhang"
+        android:layout_toRightOf="@+id/imgAnh"
+        android:textSize="20sp"
+        ></TextView>
+    <TextView
+        android:id="@+id/txtdongia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đơn gía:"
+        android:layout_toRightOf="@+id/imgAnh"
+        android:layout_below="@+id/soluong"
+        android:textSize="20dp"
+        >
+
+
+    </TextView>
+    <TextView
+        android:id="@+id/soluong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tenhang"
+        android:text="soluong"
+        android:layout_toRightOf="@+id/txtsoluong"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/dongia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="don gia"
+        android:layout_toRightOf="@+id/txtdongia"
+        android:layout_below="@+id/soluong"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>
